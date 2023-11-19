@@ -423,6 +423,12 @@ footer .main-links .link-list {
     letter-spacing: -0.048rem;
 }
 
+.social-network-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
 footer .main-links .link-list a {
     color: var(--gray-700);
 }
@@ -448,7 +454,7 @@ footer .social-network a {
 }
 
 @media(max-width: 1200px) {
-
+    
 }
 
 @media(max-width: 991px) {
@@ -471,6 +477,24 @@ footer .social-network a {
 
     .item-digital .info p {
         width: 100%;
+    }
+
+    .s-domine-frontend .header-domine-frontend {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.4rem;
+    }
+    
+    .s-domine-frontend .header-domine-frontend .left-text p {
+        max-width: 100%;
+    }
+
+    .s-domine-frontend .header-domine-frontend .right-text {
+        display: none;
+    }
+
+    .s-domine-frontend .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -513,6 +537,43 @@ footer .social-network a {
     .s-hero .text .arrow {
         max-width: 8rem;
         bottom: 3.7rem;
+    }
+
+    .s-domine-frontend .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .s-domine-frontend .cards .card-post:first-child {
+        grid-column: unset;
+    }
+
+    .s-newsletter {
+        padding: 8.9rem 2.8rem;
+    }
+
+    footer .main-links .logo-section {
+        max-width: 100%;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .main-links .logo-section img {
+        max-width: fit-content;
+        align-self: center;
+    }
+
+    footer .main-links {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-network-list {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
